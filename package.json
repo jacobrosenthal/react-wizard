@@ -1,0 +1,29 @@
+{
+  "name": "react-wizard",
+  "version": "0.1.0",
+  "description": "React Wizard / Step component",
+  "main": "src/Wizard.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacobrosenthal/react-wizard.git"
+  },
+  "keywords": [
+    "react-component",
+    "react",
+    "wizard",
+    "step"
+  ],
+  "author": "Jacob Rosenthal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacobrosenthal/react-wizard/issues"
+  },
+  "homepage": "https://github.com/jacobrosenthal/react-wizard",
+  "dependencies": {
+    "react": "^0.12.2",
+    "react-bootstrap": "^0.13.2"
+  }
+}
