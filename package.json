@@ -2,7 +2,7 @@
   "name": "react-wizard",
   "version": "0.2.0",
   "description": "React Wizard / Step component",
-  "main": "src/Wizard.jsx",
+  "main": "/lib/Wizard.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,5 +25,9 @@
   "dependencies": {
     "react": "^0.12.2",
     "react-bootstrap": "^0.13.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-react": "^2.0.0"
   }
 }
