@@ -10,6 +10,7 @@ Steps consist of:
 * name - name of step shown to user as list element
 * component - react CreatClass function of your content. 
 * onSubmit - your 'validate' function. If it returns an error the step is not advanced and that error will be shown to user. Successful callback advances to next step.
+* onBack - a function to called before leaving step. Used to cleanup.
 
 ##example step
 ```js

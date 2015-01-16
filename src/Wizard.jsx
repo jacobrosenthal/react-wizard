@@ -32,6 +32,13 @@ var Step = React.createClass({
     });
     this.props.onSubmit.apply(this, [this.onAdvance]);
   },
+  onBack: function(){
+    if(this.props.onBack){
+      this.props.onBack.apply(this, [this.props.onRetreat]);
+    }else{
+      this.props.onRetreat();
+    }
+  },
   render: function(){
 
     var AdvanceButton;
@@ -46,7 +53,7 @@ var Step = React.createClass({
     var RetreatButton;
     if(!this.props.lastStep){
       RetreatButton = React.createElement(Button, {
-        onClick: this.props.onRetreat,
+        onClick: this.onBack,
         disabled: this.props.firstStep || this.state.retreatDisabled,
       },'back');
     }
@@ -114,6 +121,7 @@ var Wizard = React.createClass({
     var Component = React.createElement(Step, {
       key: 'step' + this.state.currentStep,
       onSubmit: step.onSubmit,
+      onBack: step.onBack,
       onAdvance: function(){
         self.setState({
           currentError: null,
