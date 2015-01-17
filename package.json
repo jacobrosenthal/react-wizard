@@ -27,6 +27,7 @@
     "react-bootstrap": "^0.13.2"
   },
   "devDependencies": {
+    "beefy": "^2.1.1",
     "gulp": "^3.8.10",
     "gulp-react": "^2.0.0"
   }
