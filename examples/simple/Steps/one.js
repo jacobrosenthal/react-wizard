@@ -1,13 +1,13 @@
 var React = require('react');
 
 module.exports = {
-  name: 'Two',
+  name: 'One',
   onSubmit: function (done){
     done();
   },
-  component: React.createClass({
+  component: React.createClass({displayName: "component",
     render: function(){
-      return <h4>Two</h4>
+      return React.createElement("h4", null, "One")
     }
   })
 };

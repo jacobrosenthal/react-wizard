@@ -5,9 +5,9 @@ module.exports = {
   onSubmit: function (done){
     done();
   },
-  component: React.createClass({
+  component: React.createClass({displayName: "component",
     render: function(){
-      return <h4>Three</h4>
+      return React.createElement("h4", null, "Three")
     }
   })
 };

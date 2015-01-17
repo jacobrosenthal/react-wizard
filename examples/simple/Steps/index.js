@@ -1,6 +1,6 @@
-var One = require('./one.jsx');
-var Two = require('./two.jsx');
-var Three = require('./three.jsx');
+var One = require('./one.js');
+var Two = require('./two.js');
+var Three = require('./three.js');
 
 module.exports = [
   One,
