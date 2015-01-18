@@ -17,9 +17,9 @@ There are pure js examples in the examples directory using beefy. npm install if
 ```
 npm i
 ```
-Then use node to run an example
+Then go into an example directory and use beefy to run an example
 ```
-node examples/simple/index.js
+beefy --index=index.html main.js:bundle.js 8080
 ```
 Then load your browser up at http://localhost:8080
 

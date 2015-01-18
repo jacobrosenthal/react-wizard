@@ -1,3 +1,4 @@
+'use strict';
 var React = require('react');
 
 module.exports = {
@@ -5,9 +6,9 @@ module.exports = {
   onSubmit: function (done){
     done();
   },
-  component: React.createClass({displayName: "component",
+  component: React.createClass({displayName: 'component',
     render: function(){
-      return React.createElement("h4", null, "Two")
+      return React.createElement('h4', null, 'Two roads diverged in a yellow wood');
     }
   })
 };
