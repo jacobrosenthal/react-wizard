@@ -13,15 +13,16 @@ Steps consist of:
 * onBack - a function to called before leaving step. Used to cleanup.
 
 #examples
-There are pure js examples in the examples directory using beefy. npm install if necesssary
+There are pure js examples in the examples directory and node-http-server is a dev dependency
 ```
-npm i
+npm i && gulp examples
 ```
-Then go into an example directory and use beefy to run an example
+Then pick an example directory and port
 ```
-beefy --index=index.html main.js:bundle.js 8080
+node node_modules/node-http-server/server/http.js root=examples/data/ port=9999 launch=now
+
 ```
-Then load your browser up at http://localhost:8080
+Then load your browser up at http://localhost:9999 in this case
 
 ##note:
 Back button is automatically disabled on first step.
