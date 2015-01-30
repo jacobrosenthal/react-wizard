@@ -12,6 +12,9 @@ Steps consist of:
 * onSubmit - your 'validate' function. If it returns an error the step is not advanced and that error will be shown to user. Successful callback advances to next step.
 * onBack - a function to called before leaving step. Used to cleanup.
 
+#demos
+https://jacobrosenthal.github.io/react-wizard/
+
 #examples
 There are pure js examples in the examples directory and node-http-server is a dev dependency
 ```
