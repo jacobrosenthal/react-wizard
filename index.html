@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="React-wizard : React Wizard component">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>React-wizard</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jacobrosenthal/react-wizard">View on GitHub</a>
+
+          <h1 id="project_title">React-wizard</h1>
+          <h2 id="project_tagline">React Wizard component</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/jacobrosenthal/react-wizard/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/jacobrosenthal/react-wizard/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="react-wizard" class="anchor" href="#react-wizard" aria-hidden="true"><span class="octicon octicon-link"></span></a>react-wizard</h1>
+
+<p>Wizard is a typical wizard element for installs, mulitpart forms, etc. It takes a steps prop with an array of Step objects, start prop with optional integer to skip into the step array, and any othr props you will need later on in Step methods as a data prop. </p>
+
+<h1>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>install</h1>
+
+<pre><code>npm install react-wizard
+</code></pre>
+
+<h1>
+<a id="steps" class="anchor" href="#steps" aria-hidden="true"><span class="octicon octicon-link"></span></a>steps</h1>
+
+<p>Steps consist of:</p>
+
+<ul>
+<li>name - name of step shown to user as list element</li>
+<li>component - react CreatClass function of your content. </li>
+<li>onSubmit - your 'validate' function. If it returns an error the step is not advanced and that error will be shown to user. Successful callback advances to next step.</li>
+<li>onBack - a function to called before leaving step. Used to cleanup.</li>
+</ul>
+
+<h1>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>examples</h1>
+
+<p>There are pure js examples in the examples directory using beefy. npm install if necesssary</p>
+
+<pre><code>npm i
+</code></pre>
+
+<p>Then go into an example directory and use beefy to run an example</p>
+
+<pre><code>beefy --index=index.html main.js:bundle.js 8080
+</code></pre>
+
+<p>Then load your browser up at http://localhost:8080</p>
+
+<h2>
+<a id="note" class="anchor" href="#note" aria-hidden="true"><span class="octicon octicon-link"></span></a>note:</h2>
+
+<p>Back button is automatically disabled on first step.
+The built in buttons are removed from the last step so remember to provide buttons/links on your last step for your user to escape.</p>
+
+<p>Big thanks to <a href="https://github.com/brianshaler" class="user-mention">@brianshaler</a> for the code review that turned into an entire rewrite</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">React-wizard maintained by <a href="https://github.com/jacobrosenthal">jacobrosenthal</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
